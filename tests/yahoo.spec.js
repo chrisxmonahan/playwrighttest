@@ -6,4 +6,5 @@ test('yahoo search checker', async ({ page }) => {
   await page.getByLabel('Search', { exact: true }).fill('timberframe');
   await page.getByLabel('Yahoo Search').first().click();
   await page.getByRole('link', { name: 'Images', exact: true }).click();
+  await delay(3000);
 });
