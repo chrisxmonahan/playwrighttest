@@ -6,4 +6,5 @@ test('google search checker', async ({ page }) => {
   await page.getByLabel('Search', { exact: true }).fill('mustang');
   await page.getByLabel('Google Search').first().click();
   await page.getByRole('link', { name: 'Images', exact: true }).click();
+  await delay(3000);
 });
